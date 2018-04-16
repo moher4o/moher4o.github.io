@@ -1,0 +1,12 @@
+{{> header}}
+<h1 class="titleForm">Advertisements</h1>
+<section id="viewAds" class="viewAds">
+    <div id="ads" class="ads">
+            {{#each products}}
+                {{> product}}
+            {{else}}
+                <p>No products in database.</p>
+            {{/each}}
+    </div>
+</section>
+{{> footer}}

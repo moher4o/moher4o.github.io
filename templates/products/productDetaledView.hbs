@@ -1,0 +1,23 @@
+<section id="viewAd" class="viewAd">
+    <div>
+        {{#if imageUrl}}
+            <img src="{{image}}" alt="Ad picture" style="width:200px;height:auto; max-height: 150px">
+        {{else}}
+            <label id="picture" style="color: coral">No image</label>
+        {{/if}}
+    </div>
+    <div class="infolabel">Title:</div>
+    <div name="title">{{title}}</div>
+    <!--<div class="infolabel">Description:</div>-->
+    <!--<div name="description">-->
+        <!--<textarea name="description" rows="5" disabled>{{description}}</textarea>-->
+    <!--</div>-->
+    <div class="infolabel">Price:</div>
+    <div name="price">{{price}}лв.</div>
+    <a href="#/details/product/{{_id}}">[More info]</a>
+    {{#if isAuthor}}
+        <a href="#/delete/product/{{_id}}">[Delete]</a>
+        <a href="#/edit/product/{{_id}}">[Edit]</a>
+    {{/if}}
+
+</section>

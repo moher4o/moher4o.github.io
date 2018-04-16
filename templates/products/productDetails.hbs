@@ -1,0 +1,24 @@
+{{> header}}
+<h1 class="titleForm">Advertisement details</h1>
+<section id="viewAdDetails" class="viewAdDetails">
+    <!--<h1 class="titleForm">Advertisement details</h1>-->
+    <div>
+        {{#if imageUrl}}
+            <img src="{{product.image}}" alt="Ad picture" style="width:200px;height:auto;">
+        {{else}}
+            <label id="picture" style="color: coral">There's no picture of the product</label>
+        {{/if}}
+    </div>
+    <div class="infolabel">Title:</div>
+    <div name="title">{{product.title}}</div>
+    <div class="infolabel">Description:</div>
+    <div name="description">{{product.description}}</div>
+    <div class="infolabel">Publisher</div>
+    <div name="publisher">{{product.publisher}}</div>
+    <div class="infolabel">Date Published:</div>
+    <div name="datePublished">{{product.datePublished}}</div>
+    <div class="infolabel">Price:</div>
+    <div name="price">{{product.price}}лв.</div>
+</section>
+{{> footer}}
+
